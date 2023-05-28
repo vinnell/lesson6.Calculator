@@ -20,14 +20,22 @@ public class Main {
 
 
         Engineeringcalculator engineering = new Engineeringcalculator();
-
+        engineering.setAdd(5,1);
+        System.out.println("\nEngineeringcalculator: Add = " + engineering.add());
+        System.out.println("Engineeringcalculator: Divide =  " + engineering.remove());
         System.out.println("Sinus = " + engineering.sinus(90));
         System.out.println("Cosinus = " + engineering.cosinus(60));
 
         Accountingcalculator accounting = new Accountingcalculator();
+        accounting.setAdd(5,8);
+        System.out.println("\nAccountingcalculator: Multiply = " + accounting.multiply());
+        System.out.println("Accountingcalculator: Divide = " + accounting.divide());
         System.out.println("Value Added Tax (VAT) = " + accounting.allocateValueAddedTax(550, 20));
 
         Programmingcalculator programming = new Programmingcalculator();
-        System.out.print("Body Mass Index is " + programming.CalculationBodyMassIndex(60,1.58)+"\n");
+        programming.setAdd(25,5);
+        System.out.println("\nProgrammingcalculator: Multiply = " + programming.multiply());
+        System.out.println("Programmingcalculator: Divide = " + programming.divide());
+        System.out.print("Body Mass Index is " + programming.CalculationBodyMassIndex(60,1.58));
         }
     }
