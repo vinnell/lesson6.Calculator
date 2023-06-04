@@ -2,9 +2,6 @@ public class Calculator {
     public double x;
     public double y;
 
-    public double getAdd(){
-        return 0;
-    }
     public void setAdd(double x, double y){
         this.x = x;
         this.y = y;
@@ -19,7 +16,14 @@ public class Calculator {
         return x * y;
     }
     public double divide() {
-        return x/y;
+        if(y == 0)
+            try{
+                throw new Exception();
+            }
+        catch(Exception e){
+                System.out.println("ArithmeticException : divide by 0 ");
+            }
+                return x/y;
     }
 
 }

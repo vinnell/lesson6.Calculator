@@ -5,5 +5,6 @@ public class Accountingcalculator extends Calculator{
         System.out.println("VAT rate: " + taxrate + ", " + "price including VAT: " + sum);
         return tax;
     }
+
 }
 
