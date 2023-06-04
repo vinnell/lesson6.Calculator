@@ -1,6 +1,6 @@
 public class Programmingcalculator extends Calculator{
      public double CalculationBodyMassIndex(double weight, double height) {
-        double index = weight / (height * height);;
+        double index = weight / (height * height);
 
        if(index <= 16) {
             System.out.println("Severe lack of body weight");
@@ -19,5 +19,16 @@ public class Programmingcalculator extends Calculator{
                         }
         return index;
         }
+    public int canUseBodyCalculator(int age){
+        if(age<18)
+            try{
+                throw new Exception();
+            }catch(Exception e){
+                System.out.println("\nYou can't use Body Calculator without adult " + e);
+            }
+        else
+            System.out.println("Use our Body Calculator");
+        return age;
+    }
 
     }
